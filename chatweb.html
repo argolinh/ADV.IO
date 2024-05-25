@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre Advogados</title>
+   <link rel="stylesheet" href="Style.CSS">
+   <!-- <script src="js/touchscroll.js"></script> -->
+</head>
+<body>
+    <main>
+                    <!-- cabecalho -->
+        <div class="navbar2">
+            <a href="#MENU" class="icon"><img src="public/images/fi-rr-menu-burger.png" alt="" onclick="toggleMenu()"><Span></Span></a>
+            <a href="index.html" class="adv"><img src="public/images/adv.png" alt=""></a>
+            <a href="#logo" class="logo"><img src="public/images/fi-rr-bell.png" alt=""></a>
+        </div>
+    </main>
+
+  
+<header>
+
+
+    <!-- menu lateral -->
+
+<div class="menu" id="menu">
+    <div> 
+       <button class="menu-aberto" onclick="toggleMenu()">voltar</button>
+   </div>
+
+   <div class="perfil_menu">
+           <img src="public/images/ellipse-16.png" alt="">
+           <span>perfil</span>
+   </div>
+<h2><hr>Apps favoritos <hr></h2>
+
+<!-- barra lateral -->
+   <div class="botoes">
+           <button>camera</button>
+           <button>galeria</button>
+           <button>Google+</button>
+           <button>Instagram</button>  
+    </div>
+
+       <div class="config">
+               <span>Configurações <hr></span>
+
+
+
+       </div>
+       <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('menu-aberto');
+        }
+    </script>
+</header>
+<!-- conteudo da pagina -->
+<header >
+    <div class="sidebar">
+        <h2>Advogados Disponíveis</h2>
+        <div class="profile" onclick="openChat(1)">
+            <h3>Dr. João Silva</h3>
+            <p>Especialista em Direito Civil</p>
+        </div>
+        <div class="profile" onclick="openChat(2)">
+            <h3>Dra. Maria Oliveira</h3>
+            <p>Especialista em Direito Penal</p>
+        </div>
+        <div class="profile" onclick="openChat(3)">
+            <h3>Dr. Carlos Souza</h3>
+            <p>Especialista em Direito Trabalhista</p>
+        </div>
+        <div class="profile" onclick="openChat(4)">
+            <h3>Dra. Ana Costa</h3>
+            <p>Especialista em Direito Empresarial</p>
+        </div>
+        <div class="profile" onclick="openChat(5)">
+            <h3>Dr. Paulo Lima</h3>
+            <p>Especialista em Direito Tributário</p>
+        </div>
+        <div class="profile" onclick="openChat(6)">
+            <h3>Dra. Beatriz Ferreira</h3>
+            <p>Especialista em Direito Ambiental</p>
+        </div>
+        <div class="profile" onclick="openChat(7)">
+            <h3>Dr. Roberto Mendes</h3>
+            <p>Especialista em Direito Internacional</p>
+        </div>
+        <div class="profile" onclick="openChat(8)">
+            <h3>Dra. Fernanda Santos</h3>
+            <p>Especialista em Direito Constitucional</p>
+        </div>
+        <div class="profile" onclick="openChat(9)">
+            <h3>Dr. Ricardo Almeida</h3>
+            <p>Especialista em Direito Imobiliário</p>
+        </div>
+        <div class="profile" onclick="openChat(10)">
+            <h3>Dra. Juliana Martins</h3>
+            <p>Especialista em Direito Digital</p>
+        </div>
+    </div>
+
+    <div id="chat-container-1" class="chat-container">
+        <div class="chat-header">Chat com Dr. João Silva</div>
+        <div class="chat-messages" id="chat-messages-1"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-1" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(1)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-2" class="chat-container">
+        <div class="chat-header">Chat com Dra. Maria Oliveira</div>
+        <div class="chat-messages" id="chat-messages-2"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-2" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(2)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-3" class="chat-container">
+        <div class="chat-header">Chat com Dr. Carlos Souza</div>
+        <div class="chat-messages" id="chat-messages-3"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-3" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(3)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-4" class="chat-container">
+        <div class="chat-header">Chat com Dra. Ana Costa</div>
+        <div class="chat-messages" id="chat-messages-4"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-4" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(4)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-5" class="chat-container">
+        <div class="chat-header">Chat com Dr. Paulo Lima</div>
+        <div class="chat-messages" id="chat-messages-5"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-5" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(5)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-6" class="chat-container">
+        <div class="chat-header">Chat com Dra. Beatriz Ferreira</div>
+        <div class="chat-messages" id="chat-messages-6"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-6" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(6)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-7" class="chat-container">
+        <div class="chat-header">Chat com Dr. Roberto Mendes</div>
+        <div class="chat-messages" id="chat-messages-7"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-7" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(7)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-8" class="chat-container">
+        <div class="chat-header">Chat com Dra. Fernanda Santos</div>
+        <div class="chat-messages" id="chat-messages-8"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-8" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(8)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-9" class="chat-container">
+        <div class="chat-header">Chat com Dr. Ricardo Almeida</div>
+        <div class="chat-messages" id="chat-messages-9"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-9" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(9)">Enviar</button>
+        </div>
+    </div>
+
+    <div id="chat-container-10" class="chat-container">
+        <div class="chat-header">Chat com Dra. Juliana Martins</div>
+        <div class="chat-messages" id="chat-messages-10"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-10" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage(10)">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        function openChat(profileId) {
+            // Esconder todos os contêineres de chat
+            const chatContainers = document.querySelectorAll('.chat-container');
+            chatContainers.forEach(container => container.classList.remove('active'));
+
+            // Mostrar o contêiner de chat selecionado
+            document.getElementById(`chat-container-${profileId}`).classList.add('active');
+
+            // Esconder a sidebar
+            document.querySelector('.sidebar').classList.add('hidden');
+        }
+
+        function sendMessage(profileId) {
+            const input = document.getElementById(`chat-input-${profileId}`);
+            const messages = document.getElementById(`chat-messages-${profileId}`);
+            const message = input.value.trim();
+            
+            if (message) {
+                const messageElement = document.createElement('div');
+                messageElement.textContent = message;
+                messages.appendChild(messageElement);
+                input.value = '';
+                messages.scrollTop = messages.scrollHeight;
+            }
+        }
+    </script>
+</header>
+
+
+
+
+    <footer>
+        <div class="navbar">
+            <a href="index.html"><img class="incons" src="public/images/ic_home.png" alt=""></a></li>
+            <a class="text" href="chatweb.html"><img class="incons" src="public/images/ic_chat.png" alt=""></a>
+            <a class="text" href="paginadeadvogados.html"><img class="incons" src="public/images/ic_advogados.png" alt=""></a>
+            <a class="text" href="perfil.html"><img class="incons" src="public/images/ic_profile.png" alt=""></a>
+     </div>
+    </footer>        
+
+
+
+
+
+
+
+
+</body>

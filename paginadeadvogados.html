@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre Advogados</title>
+   <link rel="stylesheet" href="Style.CSS">
+   <!-- <script src="js/touchscroll.js"></script> -->
+</head>
+<body>
+    <main>
+                    <!-- cabecalho -->
+        <div class="navbar2">
+            <a href="#MENU" class="icon"><img src="public/images/fi-rr-menu-burger.png" alt="" onclick="toggleMenu()"><Span></Span></a>
+            <a href="index.html" class="adv"><img src="public/images/adv.png" alt=""></a>
+            <a href="#logo" class="logo"><img src="public/images/fi-rr-bell.png" alt=""></a>
+        </div>
+    </main>
+
+  
+<header>
+
+
+    <!-- menu lateral -->
+
+<div class="menu" id="menu">
+    <div> 
+       <button class="menu-aberto" onclick="toggleMenu()">voltar</button>
+   </div>
+
+   <div class="perfil_menu">
+           <img src="public/images/ellipse-16.png" alt="">
+           <span>perfil</span>
+   </div>
+<h2><hr>Apps favoritos <hr></h2>
+
+
+   <div class="botoes">
+           <button>camera</button>
+           <button>galeria</button>
+           <button>Google+</button>
+           <button>Instagram</button>  
+    </div>
+
+       <div class="config">
+               <span>Configurações <hr></span>
+
+               <div>
+                   
+               </div>
+
+
+       </div>
+       <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('menu-aberto');
+        }
+    </script>
+</header>
+    <footer>
+        <div class="navbar">
+            <a href="index.html"><img class="incons" src="public/images/ic_home.png" alt=""></a></li>
+            <a class="text" href="chatweb.html"><img class="incons" src="public/images/ic_chat.png" alt=""></a>
+            <a class="text" href="paginadeadvogados.html"><img class="incons" src="public/images/ic_advogados.png" alt=""></a>
+            <a class="text" href="perfil.html"><img class="incons" src="public/images/ic_profile.png" alt=""></a>
+     </div>
+    </footer>        
+<section>
+    <div class="lawyer-list">
+        <h2>Advogados Disponíveis</h2>
+        <div class="profile" onclick="showQualification(1)">
+            <h3>Dr. João Silva</h3>
+            <p>Especialista em Direito Civil</p>
+        </div>
+        <div class="profile" onclick="showQualification(2)">
+            <h3>Dra. Maria Oliveira</h3>
+            <p>Especialista em Direito Penal</p>
+        </div>
+        <div class="profile" onclick="showQualification(3)">
+            <h3>Dr. Carlos Souza</h3>
+            <p>Especialista em Direito Trabalhista</p>
+        </div>
+        <div class="profile" onclick="showQualification(4)">
+            <h3>Dra. Ana Costa</h3>
+            <p>Especialista em Direito Empresarial</p>
+        </div>
+        <div class="profile" onclick="showQualification(5)">
+            <h3>Dr. Paulo Lima</h3>
+            <p>Especialista em Direito Tributário</p>
+        </div>
+        <div class="profile" onclick="showQualification(6)">
+            <h3>Dra. Beatriz Ferreira</h3>
+            <p>Especialista em Direito Ambiental</p>
+        </div>
+        <div class="profile" onclick="showQualification(7)">
+            <h3>Dr. Roberto Mendes</h3>
+            <p>Especialista em Direito Internacional</p>
+        </div>
+        <div class="profile" onclick="showQualification(8)">
+            <h3>Dra. Fernanda Santos</h3>
+            <p>Especialista em Direito Constitucional</p>
+        </div>
+        <div class="profile" onclick="showQualification(9)">
+            <h3>Dr. Ricardo Almeida</h3>
+            <p>Especialista em Direito Imobiliário</p>
+        </div>
+        <div class="profile" onclick="showQualification(10)">
+            <h3>Dra. Juliana Martins</h3>
+            <p>Especialista em Direito Digital</p>
+        </div>
+    </div>
+
+    <div id="qualification-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="qualification-content">
+                <!-- Conteúdo das qualificações será inserido aqui pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const qualifications = {
+            1: {
+                name: 'Dr. João Silva',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduado em Direito pela Universidade XYZ</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>10 anos de experiência em Direito Civil</p>
+                    <h4>Certificações:</h4>
+                    <p>Certificado em Prática Civil Avançada</p>
+                `
+            },
+            2: {
+                name: 'Dra. Maria Oliveira',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduada em Direito pela Universidade ABC</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>15 anos de experiência em Direito Penal</p>
+                    <h4>Certificações:</h4>
+                    <p>Especialização em Ciências Criminais</p>
+                `
+            },
+            3: {
+                name: 'Dr. Carlos Souza',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduado em Direito pela Universidade DEF</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>12 anos de experiência em Direito Trabalhista</p>
+                    <h4>Certificações:</h4>
+                    <p>Certificado em Direito do Trabalho</p>
+                `
+            },
+            4: {
+                name: 'Dra. Ana Costa',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduada em Direito pela Universidade GHI</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>8 anos de experiência em Direito Empresarial</p>
+                    <h4>Certificações:</h4>
+                    <p>Especialização em Direito Empresarial</p>
+                `
+            },
+            5: {
+                name: 'Dr. Paulo Lima',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduado em Direito pela Universidade JKL</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>14 anos de experiência em Direito Tributário</p>
+                    <h4>Certificações:</h4>
+                    <p>Mestre em Direito Tributário</p>
+                `
+            },
+            6: {
+                name: 'Dra. Beatriz Ferreira',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduada em Direito pela Universidade MNO</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>9 anos de experiência em Direito Ambiental</p>
+                    <h4>Certificações:</h4>
+                    <p>Especialização em Direito Ambiental</p>
+                `
+            },
+            7: {
+                name: 'Dr. Roberto Mendes',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduado em Direito pela Universidade PQR</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>11 anos de experiência em Direito Internacional</p>
+                    <h4>Certificações:</h4>
+                    <p>Certificado em Direito Internacional</p>
+                `
+            },
+            8: {
+                name: 'Dra. Fernanda Santos',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduada em Direito pela Universidade STU</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>10 anos de experiência em Direito Constitucional</p>
+                    <h4>Certificações:</h4>
+                    <p>Especialização em Direito Constitucional</p>
+                `
+            },
+            9: {
+                name: 'Dr. Ricardo Almeida',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduado em Direito pela Universidade VWX</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>13 anos de experiência em Direito Imobiliário</p>
+                    <h4>Certificações:</h4>
+                    <p>Certificado em Direito Imobiliário</p>
+                `
+            },
+            10: {
+                name: 'Dra. Juliana Martins',
+                qualifications: `
+                    <h4>Formação Acadêmica:</h4>
+                    <p>Graduada em Direito pela Universidade YZ</p>
+                    <h4>Experiência Profissional:</h4>
+                    <p>7 anos de experiência em Direito Digital</p>
+                    <h4>Certificações:</h4>
+                    <p>Especialização em Direito Digital</p>
+                `
+            }
+        };
+
+        function showQualification(profileId) {
+            const modal = document.getElementById('qualification-modal');
+            const qualificationContent = document.getElementById('qualification-content');
+            
+            qualificationContent.innerHTML = `
+                <div class="qualification-header">Qualificações de ${qualifications[profileId].name}</div>
+                <div class="qualification-content">${qualifications[profileId].qualifications}</div>
+            `;
+            
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('qualification-modal');
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('qualification-modal');
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</section>
+
+
+
+
+
+
+
+</body>
