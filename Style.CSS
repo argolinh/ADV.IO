@@ -132,7 +132,7 @@ header {
     justify-content:flex-start;
     flex-direction: column;
     width: 250px;
-    height: 100vh;
+    height: 100%;
     background-color: #6f6c6c;
     padding: 20px;
     color: #fff;
@@ -142,6 +142,7 @@ header {
 }
 
 .menu-aberto {
+    height: 100%;
     position: fixed;
    transform: translateX(0);
    background-color: #262424;
@@ -362,7 +363,7 @@ section .lembrete {
     padding: 20px;
     display: none;
     flex-direction: column;
-    height: 80vh;
+    height: 60vh;
     overflow: hidden;
     position: absolute;
     margin-top: 80px;
