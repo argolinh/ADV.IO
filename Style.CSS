@@ -317,7 +317,7 @@ section .lembrete {
 
 .sidebar {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     background-color: #f1f3f5;
     color: white;
     padding: 15px;
