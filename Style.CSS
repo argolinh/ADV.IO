@@ -363,7 +363,7 @@ section .lembrete {
     padding: 20px;
     display: none;
     flex-direction: column;
-    height: 60vh;
+    height: 40vh;
     overflow: hidden;
     position: absolute;
     margin-top: 80px;
