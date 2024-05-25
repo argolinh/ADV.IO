@@ -425,7 +425,7 @@ section .lembrete {
 
 
 .lawyer-list {
-    width: 300px;
+    width: 100%;
     background-color: #ffffff;
     color: white;
     padding: 15px;
