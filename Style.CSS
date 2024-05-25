@@ -316,7 +316,6 @@ section .lembrete {
 /* pagina de chatboot */
 
 .sidebar {
-
     width: 100%;
     background-color: #fff;
     color: white;
@@ -329,6 +328,7 @@ section .lembrete {
     top: 0;
     bottom: 0;
     transition: left 0.3s;
+    
 }
 
 .sidebar.hidden {
@@ -358,12 +358,11 @@ section .lembrete {
 }
 
 .chat-container {
-    margin-top: 50px;
     width: 100%;
     padding: 20px;
     display: none;
     flex-direction: column;
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
     position: absolute;
     margin-top: 80px;
